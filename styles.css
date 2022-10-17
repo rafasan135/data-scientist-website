@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    min-width: 750px;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(39,113,154, 0.1) 0%, rgba(160,160,160, 0.1) 100%);
+    padding: 2vh 0 2vh 0;
+    justify-content: space-between;
+    background-size: cover;
+    position: fixed;
+}
+
+.logo {
+    display: block;
+    font-family: 'tangerine';
+    color: #053742;
+    font-size: 42px;
+    padding: 1vw 0 0 8vw;
+}
+
+.menu {
+    display: flex;
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 300;
+    padding: 10px 80px 0 0;
+    letter-spacing: 2px;
+    background-size: cover;
+}
+
+.menu__link {
+    display: flex;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #053742;
+}
+
+.section-hero {
+    background-image: url("img/background-hero.jpg");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 40px 90px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 17px rgba(0,0,0, 0.4);
+}
+
+.h1-fm {
+    font-family: 'roboto';
+    width: 475px;
+    font-weight: 200;
+    font-size: 70px;
+    color: #333333;
+    text-shadow: 3px 3px 6px rgba(0,0,0, 0.24);
+    margin: 0 0 8px 0;
+}
+
+.h3-dt {
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 42px;
+    color: #333333; 
+    text-shadow: 3px 3px 6px rgba(0,0,0, 0.24);
+    margin: 8px 0 0 0;
+}
+
+.logo-icons {
+    display: flex;
+    padding-top: 30px;
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+.button-hs {
+    border: 1px solid rgba(5,55,66, 0.15);
+    border-radius: 30px;
+    box-shadow: 3px 3px 16px rgba(0,0,0, 0.24);
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: rgba(57,162,219, 0.8);
+    font-family: 'roboto';
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color:rgba(255,255,255, 0.9);
+}
+
+.about-me {
+    background-image: url('img/background-about-me.jpg');
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 655px;
+    background-color: rgba(232, 240, 242, .48);
+    border-radius: 15px;
+    box-shadow: 0 0 17px rgba(0,0,0, 0.4);
+    padding: 15px 40px 30px;
+}
+
+.profile-des {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 170px;
+    padding: 0 0 20px 40px;
+}
+
+.p-about-me {
+    width: 375px;
+    font-family: 'roboto';
+    font-weight: 100;
+    line-height: 140%;
+    color: rgba(0,0,0, 0.76)
+}
+
+.h-about-me {
+text-align: center;
+align-content: center;
+margin: 10px 0 20px 0;
+font-family: 'roboto';
+color: rgba(51,51,51, 0.85);
+font-size: 45px;
+font-weight: 300;
+}
+
+.my-portfolio {
+    background-image: url(img/background-my-portfolio.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.my-portfolio-tittle {
+    margin: 115px 0 0 80px;
+}
+
+.h-my-portfolio {
+    color: rgba(51,51,51, 0.85);
+    font-family: 'roboto';
+    letter-spacing: 7%;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 0 0 40px;
+
+}
+
+.p-my-portfolio {
+    font-family: 'roboto';
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0 0 30px 40px;
+
+}
+
+.portfolio-cards-container {
+    display: flex;
+    width: 90vw;
+    align-self: center;
+    justify-content: space-evenly;
+
+}
+
+.card-project {
+    width: 22vw;
+    padding: 1.5vw 1.5vw 1.5vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(232, 240, 242, .48);
+    border-radius: 15px;
+    box-shadow: 0 0 17px rgba(0,0,0, 0.4);
+
+}
+
+.img-project {
+    width: 15vw;
+    padding-bottom: 15px;
+}
+
+.h-projects {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.p-projects {
+    text-align: center;
+    font-family: 'roboto';
+    color: #040404;
+    font-weight: 100;
+    font-size: 19px;
+    letter-spacing: 10%;
+}
+
+.visit-project {
+    margin-top: 50px;
+    display: flex;
+    background-color: rgba(5,55,66, 0.65);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'roboto';
+    font-weight: 100;
+    border-radius: 30px;
+    width: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 25px;
+    width: 170px;
+}
+.img-github-proj {
+    width: 17px;
+}
+
+.visit-p {
+
+}
+
+.education-section {
+    background-image: url(img/background-education.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vw;
+}
+
+.h-section {
+    margin-top: 130px;
+    text-align: center;
+    color: rgba(51,51,51, 0.85);
+    font-family: 'roboto';
+    letter-spacing: 7%;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h3 {
+    color: rgba(0,0,0, 0.8);
+    font-size: 23px;
+    font-family: 'roboto';
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+
+h4 {
+    color: #323232;
+    font-size: 18px;
+    font-family: 'roboto';
+    font-weight: 100;
+}
+
+.edu-par {
+    font-family: 'roboto';
+    margin: 9px 0 0 0 ;
+    line-height: 150%;
+
+}
+
+.edu-img {
+    width: 50px;
+    height: 50px;
+    margin: 13px 16px 0 3px;
+}
+
+.container-education {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.card-container {
+    display: flex;
+    width: 60vw;
+    padding: 3vh 7vh;
+    margin: 6vw 0 0 0;
+    background-color: rgba(232, 240, 242, .48);
+    border-radius: 9px;
+    box-shadow: 0 0 17px rgba(0,0,0, 0.4);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 200%;
+}
+
+.card-end {
+    margin-bottom: 10vh;
+}
+
+.contact {
+    background-image: url('img/background-contact.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+
+.h-contact {
+    color: rgba(51,51,51, 0.85);
+    font-family: 'roboto';
+    font-size: 55px;
+    font-weight: 300;
+    margin: 120px 0 0 0;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 2.3vw;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: 7vw 0 0 0;
+    border-radius: 10px;
+    box-shadow: 0 0 17px rgba(0,0,0, 0.4);
+}
+
+.contact-form {
+    font-family: 'roboto';
+    font-size: 24px;
+    color:rgba(51,51,51, 0.85);
+}
+
+.email-field {
+    font-family: 'roboto';
+    font-size: 20px;
+    text-align: center;
+    width: 25vw;
+    height: 4vh;
+    background-color: rgba(232, 240, 242, .48);
+    margin: 12px 0 22px 0;
+}
+
+.textarea-contact {
+    width: 25vw;
+    height: 15vh;
+    font-family: 'roboto';
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(232, 240, 242, .48);
+    margin: 12px 0 0 0;
+}
+
+.submit-btn {
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 2vh 3vw;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color:rgba(5,55,66, 0.65);
+    border: none;
+    margin: 50px 0 0 0;
+}
+
