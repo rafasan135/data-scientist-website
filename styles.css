@@ -6,23 +6,25 @@
 
 body {
     margin: 0;
-    min-width: 831px;
 }
+
+a {
+    display: flex;
+    margin: 0;    
+}
+
+/* Start NavBar */
 
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     display: flex;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(180deg, rgba(39,113,154, 0.1) 0%, rgba(160,160,160, 0.1) 100%);
     padding: 2vh 0 2vh 0;
     justify-content: space-between;
     background-size: cover;
     position: fixed;
-}
-
-.ham-menu {
-    display: none;
 }
 
 .logo {
@@ -41,7 +43,6 @@ body {
     padding: 10px 80px 0 0;
     letter-spacing: 2px;
     background-size: cover;
-    
 }
 
 .nav-input {
@@ -58,6 +59,9 @@ a {
     color: #053742;
 }
 
+/* End NavBar */
+
+/* Start Section Hero */
 .section-hero {
     background-image: url("img/background-hero.jpg");
     min-height: 100vh;
@@ -75,17 +79,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80vw;
+    max-width: 750px;
     margin-top: 15px;
-    padding: 40px 90px 50px;
+    padding: 40px 40px 50px;
     border-radius: 15px;
     box-shadow: 0 0 17px rgba(0,0,0, 0.4);
 }
 
 .h1-fm {
     font-family: 'roboto';
-    width: 475px;
+    width: 50vw;
+    text-align: center;
     font-weight: 200;
-    font-size: 70px;
+    font-size: 40px;
     color: #333333;
     text-shadow: 3px 3px 6px rgba(0,0,0, 0.24);
     margin: 0 0 8px 0;
@@ -94,7 +101,7 @@ a {
 .h3-dt {
     font-family: 'roboto';
     font-weight: 400;
-    font-size: 42px;
+    font-size: 38px;
     color: #333333; 
     text-shadow: 3px 3px 6px rgba(0,0,0, 0.24);
     margin: 8px 0 0 0;
@@ -121,6 +128,10 @@ a {
     color:rgba(255,255,255, 0.9);
 }
 
+/* End Section Hero */
+
+/* Start About me Section */
+
 .about-me {
     background-image: url('img/background-about-me.jpg');
     min-height: 100vh;
@@ -136,11 +147,13 @@ a {
 .about-me-card {
     display: flex;
     flex-direction: column;
-    min-width: 655px;
+    width: 80vw;
+    max-width: 750px;
+    margin-top: 10vh;
     background-color: rgba(232, 240, 242, .48);
     border-radius: 15px;
     box-shadow: 0 0 17px rgba(0,0,0, 0.4);
-    padding: 15px 40px 30px;
+    padding: 15px 1vw 30px;
 }
 
 .profile-des {
@@ -158,6 +171,7 @@ a {
     font-family: 'roboto';
     font-weight: 100;
     line-height: 140%;
+    font-size: 22px;
     color: rgba(0,0,0, 0.76)
 }
 
@@ -170,6 +184,10 @@ color: rgba(51,51,51, 0.85);
 font-size: 45px;
 font-weight: 300;
 }
+
+/* End About me Section */
+
+/* Start My Porfolio Section */
 
 .my-portfolio {
     background-image: url(img/background-my-portfolio.jpg);
@@ -265,6 +283,10 @@ font-weight: 300;
 
 }
 
+/* End My Portfolio Section */
+
+/* Start My Education Section */
+
 .education-section {
     background-image: url(img/background-education.jpg);
     background-size: cover;
@@ -337,6 +359,10 @@ h4 {
 .card-end {
     margin-bottom: 10vh;
 }
+
+/* End My Education Section */
+
+/* Start Contact Section */
 
 .contact {
     background-image: url('img/background-contact.jpg');
@@ -420,98 +446,148 @@ h4 {
     box-shadow: 0 0 17px rgba(0,0,0, 0.4);   
 }
 
-@media (max-width:830px) {
 
-    body {
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
+.footer {
+    background-color: #323232;
+    width: 100px;
+}
+
+/* End Contact Section */
+
+@media (max-width:490px) {
+    .menu {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:870px) {
+    
+    .navbar {
+        justify-content: center;
     }
 
-    .section-hero {
-        background-image: none;
-        
-    /* 
-
-    .navbar {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    display: flex;
-    height: 8vh;
-    width: 100%;
-    background: grey;
-    padding: 0 0 2vh 0;
-    justify-content: space-around;
-    align-items: center;
-    background-size: cover;
-    position: fixed;
-}
-.menu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
-    font-size: 40px;
-    top:15vh;
-    line-height: 200%;
-    padding: 0;
-    top: 8vh;
-    background-color: rgba(5,55,66, 1);
-    width: 100%;
-    left: 100%;
-    transition: left 0.3s;
+    .menu {
+        padding: 0;
+    }
+    
+    .logo {
+        display: none;
 }
 
-.logo {
-    display: flex;
-    font-family: 'tangerine';
-    color: #053742;
-    font-size: 5vw;
-    margin-top: 15px;
-    padding: 1vw 0 0 0;
-}
+@media (max-width:700px) {
+    
+    .profile-des {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
+    .about-me-card {
+        margin-top: 100px;
+    }
 
-.ham-menu {
-    display: flex;
-    position: relative;
-    align-items: flex-end;
-    margin: 15px 0 0 38vw;
-}
+    .h-about-me {
+        text-align: center;
+        align-content: center;
+        margin: 10px 0 20px 0;
+        font-family: 'roboto';
+        color: rgba(51,51,51, 0.85);
+        font-size: 40px;
+        font-weight: 300;
+        }
 
-.menu__link {
-    display: flex;
-    margin: 10px;
-}
+    .p-about-me {
+        width: 70vw;
+        font-family: 'roboto';
+        font-weight: 100;
+        line-height: 140%;
+        text-align:justify;
+        font-size: 22px;
+        color: rgba(0,0,0, 0.76)
+    }
 
- .nav-menu_visible {
-    left: 0%;
-} 
+    .profile-img {
+        width: 130px;
+        padding: 0 0 20px 0;
+    }
 
-a {
-    text-decoration: none;
-    color: white;
-}
+    .portfolio-cards-container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    
+    }
+    
+    .card-project {
+        width: 90%;
+        margin: 0 0 30px 0;
+        padding: 30px;
+    }
 
-.portfolio-cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    justify-content: space-evenly;
-}
+    .card-project-last {
+        margin-bottom: 8vw;
+    }
 
+    .my-portfolio-tittle {
+        margin: 80px 0 0;
+        justify-items: center;
+        text-align: center;
+    }
+    
+    .h-my-portfolio {
+        margin: 0;
+        text-align: center;
+    }
 
+    .p-my-portfolio {
+        margin:0 0 20px;
+    }
 
-.card-project {
-    width: 90vw;
-    padding: 1.5vw 1.5vw 1.5vw; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(232, 240, 242, .48);
-    border-radius: 15px;
-    box-shadow: 0 0 17px rgba(0,0,0, 0.4);
+    
+    .img-project {
+        width: 35vw;
+        padding-bottom: 15px;
+    }
+    
+    .h-projects {
+        text-align: center;
+    }
 
-} */
+    .container-education {
+        align-items: center;
+        width: 90vw;
+    }
+
+    .h-section {
+        margin: 80px 0 0 0;
+    }
+
+    .h3-edu {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 25px 30px;
+        font-size: 18px;
+    }
+    .edu-img {
+        align-self: center;
+    }
+
+    .h-contact {
+        margin-top: 80px;
+    }
+
+    .email-field {
+        width: 200px;
+    }
+
+    .contact-container {
+        width: 80%;
+    }
+};
