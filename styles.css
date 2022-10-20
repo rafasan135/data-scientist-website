@@ -6,8 +6,14 @@
 
 body {
     margin: 0;
-    min-width: 750px;
 }
+
+a {
+    display: flex;
+    margin: 0;    
+}
+
+/* Start NavBar */
 
 .navbar {
     font-family: 'Roboto', sans-serif;
@@ -39,6 +45,10 @@ body {
     background-size: cover;
 }
 
+.nav-input {
+    display: none; 
+}
+
 .menu__link {
     display: flex;
     margin: 10px;
@@ -49,6 +59,9 @@ a {
     color: #053742;
 }
 
+/* End NavBar */
+
+/* Start Section Hero */
 .section-hero {
     background-image: url("img/background-hero.jpg");
     min-height: 100vh;
@@ -66,17 +79,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80vw;
+    max-width: 750px;
     margin-top: 15px;
-    padding: 40px 90px 50px;
+    padding: 40px 40px 50px;
     border-radius: 15px;
     box-shadow: 0 0 17px rgba(0,0,0, 0.4);
 }
 
 .h1-fm {
     font-family: 'roboto';
-    width: 475px;
+    width: 50vw;
+    text-align: center;
     font-weight: 200;
-    font-size: 70px;
+    font-size: 40px;
     color: #333333;
     text-shadow: 3px 3px 6px rgba(0,0,0, 0.24);
     margin: 0 0 8px 0;
@@ -85,7 +101,7 @@ a {
 .h3-dt {
     font-family: 'roboto';
     font-weight: 400;
-    font-size: 42px;
+    font-size: 38px;
     color: #333333; 
     text-shadow: 3px 3px 6px rgba(0,0,0, 0.24);
     margin: 8px 0 0 0;
@@ -112,6 +128,10 @@ a {
     color:rgba(255,255,255, 0.9);
 }
 
+/* End Section Hero */
+
+/* Start About me Section */
+
 .about-me {
     background-image: url('img/background-about-me.jpg');
     min-height: 100vh;
@@ -127,11 +147,13 @@ a {
 .about-me-card {
     display: flex;
     flex-direction: column;
-    min-width: 655px;
+    width: 80vw;
+    max-width: 750px;
+    margin-top: 10vh;
     background-color: rgba(232, 240, 242, .48);
     border-radius: 15px;
     box-shadow: 0 0 17px rgba(0,0,0, 0.4);
-    padding: 15px 40px 30px;
+    padding: 15px 1vw 30px;
 }
 
 .profile-des {
@@ -149,6 +171,7 @@ a {
     font-family: 'roboto';
     font-weight: 100;
     line-height: 140%;
+    font-size: 22px;
     color: rgba(0,0,0, 0.76)
 }
 
@@ -161,6 +184,10 @@ color: rgba(51,51,51, 0.85);
 font-size: 45px;
 font-weight: 300;
 }
+
+/* End About me Section */
+
+/* Start My Porfolio Section */
 
 .my-portfolio {
     background-image: url(img/background-my-portfolio.jpg);
@@ -256,6 +283,10 @@ font-weight: 300;
 
 }
 
+/* End My Portfolio Section */
+
+/* Start My Education Section */
+
 .education-section {
     background-image: url(img/background-education.jpg);
     background-size: cover;
@@ -329,6 +360,10 @@ h4 {
     margin-bottom: 10vh;
 }
 
+/* End My Education Section */
+
+/* Start Contact Section */
+
 .contact {
     background-image: url('img/background-contact.jpg');
     display: flex;
@@ -358,7 +393,7 @@ h4 {
     text-align: center;
     justify-items: center;
     align-items: center;
-    margin: 7vw 0 0 0;
+    margin: 5vh 0 15vh 0;
     border-radius: 10px;
     box-shadow: 0 0 17px rgba(0,0,0, 0.4);
 }
@@ -377,16 +412,20 @@ h4 {
     height: 4vh;
     background-color: rgba(232, 240, 242, .48);
     margin: 12px 0 22px 0;
+    border: none;
 }
 
 .textarea-contact {
-    width: 25vw;
+    width: 20vw;
     height: 15vh;
+    min-width: 200px;
     font-family: 'roboto';
     font-size: 20px;
     text-align: center;
     background-color: rgba(232, 240, 242, .48);
     margin: 12px 0 0 0;
+    border: none;
+    border-bottom: 1px;
 }
 
 .submit-btn {
@@ -397,9 +436,158 @@ h4 {
     text-align: center;
     padding: 2vh 3vw;
     border-radius: 8px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     background-color:rgba(5,55,66, 0.65);
     border: none;
     margin: 50px 0 0 0;
 }
 
+.submit-btn:hover {
+    box-shadow: 0 0 17px rgba(0,0,0, 0.4);   
+}
+
+
+.footer {
+    background-color: #323232;
+    width: 100px;
+}
+
+/* End Contact Section */
+
+@media (max-width:490px) {
+    .menu {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:870px) {
+    
+    .navbar {
+        justify-content: center;
+    }
+
+    .menu {
+        padding: 0;
+    }
+    
+    .logo {
+        display: none;
+}
+
+@media (max-width:700px) {
+    
+    .profile-des {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-me-card {
+        margin-top: 100px;
+    }
+
+    .h-about-me {
+        text-align: center;
+        align-content: center;
+        margin: 10px 0 20px 0;
+        font-family: 'roboto';
+        color: rgba(51,51,51, 0.85);
+        font-size: 40px;
+        font-weight: 300;
+        }
+
+    .p-about-me {
+        width: 70vw;
+        font-family: 'roboto';
+        font-weight: 100;
+        line-height: 140%;
+        text-align:justify;
+        font-size: 22px;
+        color: rgba(0,0,0, 0.76)
+    }
+
+    .profile-img {
+        width: 130px;
+        padding: 0 0 20px 0;
+    }
+
+    .portfolio-cards-container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    
+    }
+    
+    .card-project {
+        width: 90%;
+        margin: 0 0 30px 0;
+        padding: 30px;
+    }
+
+    .card-project-last {
+        margin-bottom: 8vw;
+    }
+
+    .my-portfolio-tittle {
+        margin: 80px 0 0;
+        justify-items: center;
+        text-align: center;
+    }
+    
+    .h-my-portfolio {
+        margin: 0;
+        text-align: center;
+    }
+
+    .p-my-portfolio {
+        margin:0 0 20px;
+    }
+
+    
+    .img-project {
+        width: 35vw;
+        padding-bottom: 15px;
+    }
+    
+    .h-projects {
+        text-align: center;
+    }
+
+    .container-education {
+        align-items: center;
+        width: 90vw;
+    }
+
+    .h-section {
+        margin: 80px 0 0 0;
+    }
+
+    .h3-edu {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 25px 30px;
+        font-size: 18px;
+    }
+    .edu-img {
+        align-self: center;
+    }
+
+    .h-contact {
+        margin-top: 80px;
+    }
+
+    .email-field {
+        width: 200px;
+    }
+
+    .contact-container {
+        width: 80%;
+    }
+};
