@@ -459,6 +459,9 @@ h4 {
     .menu {
         font-size: 3vw;
     }
+    .navbar {
+        background: #74B2D3;
+        box-shadow: 3px 3px 16px rgba(0,0,0, 0.24);
 }
 
 @media (max-width:870px) {
