@@ -20,7 +20,8 @@ a {
     font-weight: 300;
     display: flex;
     width: 100vw;
-    background: linear-gradient(180deg, rgba(39,113,154, 0.1) 0%, rgba(160,160,160, 0.1) 100%);
+    background: #74B2D3;
+    box-shadow: 3px 3px 16px rgba(0,0,0, 0.24);
     padding: 2vh 0 2vh 0;
     justify-content: space-between;
     background-size: cover;
