@@ -66,6 +66,7 @@ a:link, a:visited, a:active {
 /* Start Section Hero */
 
 .section-hero {
+    position: relative;
     background-image: url("img/backgrounds/background_home.jpg");
     min-height: 100vh;
     min-width: 100vw;
@@ -79,6 +80,11 @@ a:link, a:visited, a:active {
 }
 
 .hero-card {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 25%;
+    bottom: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,8 +95,8 @@ a:link, a:visited, a:active {
     padding: 2.5rem 2.5rem 3.1rem;
     border-radius: 0.7rem;
     background: rgba(102, 102, 102, 0.22);
-    border: 0.4rem solid rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 17px rgba(255, 255, 255, 0.8);
+    border: 0.4rem solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 17px rgba(255, 255, 255, 0.7);
 }
 
 .h1-fm {
