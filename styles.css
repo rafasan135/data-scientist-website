@@ -79,9 +79,17 @@ a:link, a:visited, a:active {
     align-items: center;
 }
 
+.particles-js-hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(180deg, #000000 5.21%, rgba(41, 41, 41, 0.87) 27.6%, rgba(33, 46, 64, 0.78) 42.19%, rgba(0, 48, 111, 0.7) 72.4%, rgba(0, 48, 111, 0.761307) 86.46%, rgba(0, 48, 111, 0.78) 100%);
+  }
+
 .hero-card {
     position: absolute;
     height: auto;
+    min-height: 350px;
     width: auto;
     top: 25%;
     bottom: 25%;
@@ -89,8 +97,7 @@ a:link, a:visited, a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 80vw;
-    max-width: 46rem;
+    justify-content: center;
     margin-top: 0.9rem;
     padding: 2.5rem 2.5rem 3.1rem;
     border-radius: 0.7rem;
@@ -135,7 +142,7 @@ a:link, a:visited, a:active {
     border: 1px solid rgba(5,55,66, 0.15);
     border-radius: 30px;
     box-shadow: 3px 3px 16px rgba(0,0,0, 0.24);
-    margin-top: 50px;
+    margin-top: 35px;
     padding: 0.6rem 1.8rem;
     background-color: #39A2DB;
     border: 2px solid #ffffff40;
@@ -461,14 +468,6 @@ h4 {
     display: flex;
     background: linear-gradient(180deg, #000000 5.21%, rgba(41, 41, 41, 0.87) 27.6%, rgba(33, 46, 64, 0.78) 42.19%, rgba(0, 48, 111, 0.7) 72.4%, rgba(0, 48, 111, 0.761307) 86.46%, rgba(0, 48, 111, 0.78) 100%);
   }
-
-  .particles-js-hero {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    background: linear-gradient(180deg, #000000 5.21%, rgba(41, 41, 41, 0.87) 27.6%, rgba(33, 46, 64, 0.78) 42.19%, rgba(0, 48, 111, 0.7) 72.4%, rgba(0, 48, 111, 0.761307) 86.46%, rgba(0, 48, 111, 0.78) 100%);
-  }
-
 
 .h-contact1 {
     margin: 0;
