@@ -76,7 +76,7 @@ a:link, a:visited, a:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
 .hero-card {
@@ -461,6 +461,14 @@ h4 {
     display: flex;
     background: linear-gradient(180deg, #000000 5.21%, rgba(41, 41, 41, 0.87) 27.6%, rgba(33, 46, 64, 0.78) 42.19%, rgba(0, 48, 111, 0.7) 72.4%, rgba(0, 48, 111, 0.761307) 86.46%, rgba(0, 48, 111, 0.78) 100%);
   }
+
+  .particles-js-hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(180deg, #000000 5.21%, rgba(41, 41, 41, 0.87) 27.6%, rgba(33, 46, 64, 0.78) 42.19%, rgba(0, 48, 111, 0.7) 72.4%, rgba(0, 48, 111, 0.761307) 86.46%, rgba(0, 48, 111, 0.78) 100%);
+  }
+
 
 .h-contact1 {
     margin: 0;
