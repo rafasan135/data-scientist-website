@@ -11,10 +11,12 @@ body {
     margin: 0;
 }
 
-a {
+a:link, a:visited, a:active {
+    text-decoration:none;
     display: flex;
-    margin: 0;    
+    margin: 0;
 }
+
 
 /* Start NavBar */
 
@@ -119,6 +121,10 @@ a {
     justify-content: space-evenly;
 }
 
+.logo-git:hover, .logo-lin:hover, .logo-email:hover {
+    cursor: pointer;  
+    }
+
 .button-hs {
     border: 1px solid rgba(5,55,66, 0.15);
     border-radius: 30px;
@@ -126,12 +132,18 @@ a {
     margin-top: 50px;
     padding: 0.6rem 1.8rem;
     background-color: #39A2DB;
+    border: 2px solid #ffffff40;
     text-decoration: none;
     font-family: var(--roboto);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     color:rgba(255,255,255, 0.9);
+}
+
+.button-hs:hover {
+    box-shadow: 0 0 17px rgba(0,0,0, 0.6); 
+    cursor: pointer;  
 }
 
 .a_{
@@ -189,7 +201,6 @@ a {
     line-height: 140%;
     font-size: 22px;
     color: rgba(255, 255, 255, 0.8)
-
 }
 
 /* End About me Section */
@@ -217,7 +228,6 @@ a {
     letter-spacing: 7%;
     font-size: 2.8rem;
     font-weight: 300;
-
 }
 
 .h-projects {
@@ -230,7 +240,6 @@ a {
     font-weight: 100;
     font-size: 1.3rem;
     margin: 0;
-
 }
 
 .portfolio-cards-container {
@@ -257,13 +266,11 @@ a {
     justify-content: center;
     margin-bottom: 5vh;
     height: 100%;
-
-
 }
 
 .card-project {
-    width: 27vw;
-    padding: 1.5vw 1.5vw; 
+    width: 22vw;
+    padding: 3vw 1.3vw; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,16 +280,14 @@ a {
     margin: 0.5rem;
     background: rgba(1, 11, 17, 0.75);
     border-radius: 0.7rem;
-
 }
 
 .img-project {
-    width: 65%;
+    width: 55%;
     border-radius: 0.3rem;
     box-shadow: 0 0 1rem rgba(0,0,0, 0.7);
     margin-bottom: 1rem;
 }
-
 
 .h-projects {
     padding-bottom: 20px;
@@ -301,16 +306,16 @@ a {
 .visit-project {
     margin-top: 2rem;
     display: flex;
-    background-color: rgba(5,55,66, 0.65);
+    background-color: #39A2DB35;
     color: rgba(255, 255, 255, 0.8);
-    border-radius: 0.5rem;
+    border-radius: 12px;
     font-family: var(--roboto);
     font-weight: 100;
     justify-content: space-between;
-    align-items: center;
     padding: 9px 25px;
     width: 11rem;
 }
+
 .img-github-proj {
     width: 1.1rem;
 }
@@ -319,10 +324,7 @@ a {
     display: flex;
     flex-direction:column-reverse;
     height: 100%;
-    
 }
-
-/* End My Portfolio Section */
 
 /* Start My Education Section */
 
@@ -379,8 +381,6 @@ h4 {
 .container-education {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .card-container {
@@ -515,16 +515,16 @@ h4 {
     font-size: 18px;
     letter-spacing: 1.5px;
     text-align: center;
-    padding: 2vh 3vw;
-    border-radius: 8px;
+    padding: 0.6rem 1.8rem;
+    border-radius: 20px;
     color: rgba(255, 255, 255, 0.9);
-    background-color:rgba(5,55,66, 0.65);
+    background-color: #39A2DB99;
     border: none;
     margin: 1rem 0 0 0;
 }
 
 .submit-btn:hover {
-    box-shadow: 0 0 17px rgba(0,0,0, 0.4); 
+    box-shadow: 0 0 17px rgba(0,0,0, 0.6); 
     cursor: pointer;  
 }
 
@@ -587,8 +587,11 @@ h4 {
         font-size: 1.2rem;
     }
 
+    .card-project {
+        width: 27vw;
+    }
+
     .visit-project {
-        margin: 2vh 0;
         width: 7rem;
         text-align: center;
         font-size: 0.9rem;
@@ -685,7 +688,7 @@ h4 {
     
     .card-project {
         width: 80%;
-        height: 90%;
+        height: 80%;
         margin: 0 0 2rem 0;
         padding: 2rem;
     }
@@ -759,6 +762,7 @@ h4 {
 }
 
     @media (max-width:500px) {
+       
         .menu {
             font-size: 0.7rem;
             text-align: center;
@@ -791,3 +795,4 @@ h4 {
         .footer {
             font-size: 0.7rem;
     }
+}
