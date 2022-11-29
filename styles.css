@@ -821,3 +821,9 @@ h4 {
             font-size: 0.7rem;
     }
 }
+
+    @media (max-width: 400px) {
+        .menu__link {
+            font-size: 2.5vw;
+        }
+}
