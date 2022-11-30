@@ -422,6 +422,11 @@ h4 {
     line-height: 200%;
 }
 
+.animation {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
 .card-end {
     margin-bottom: 10vh;
 }
@@ -505,7 +510,7 @@ h4 {
     font-family: var(--roboto);
     font-size: 24px;
     color: rgba(255, 255, 255, 0.8);
-    width: 80%;
+    width: 90%;
 }
 
 .email-field {
@@ -536,8 +541,8 @@ h4 {
 
 .submit-btn {
     font-family: var(--roboto);
+    font-size: 1rem;
     font-weight: 300;
-    font-size: 18px;
     letter-spacing: 1.5px;
     text-align: center;
     padding: 0.6rem 1.8rem;
@@ -551,6 +556,10 @@ h4 {
 .submit-btn:hover {
     box-shadow: 0 0 17px rgba(0,0,0, 0.6); 
     cursor: pointer;  
+}
+
+.submit-btn:active {
+    font-size: 0.9rem;
 }
 
 .sub-h-contact {
@@ -617,8 +626,9 @@ h4 {
     }
 
     .visit-project {
-        width: 8rem;
+        width: 9rem;
         text-align: center;
+        justify-content: center;
         font-size: 0.9rem;
         font-weight: 300;
     }
@@ -751,7 +761,7 @@ h4 {
     }
 
     .h-section {
-        margin: 80px 0 0 0;
+        margin: 60px 0 0 0;
     }
 
     .h3-edu {
@@ -762,9 +772,14 @@ h4 {
     .card-container {
         display: flex;
         flex-direction: column;
+        margin: 7vw 0 0 0;
         width: 90%;
-        padding: 25px 30px;
+        padding: 0.7rem 1.875rem 1.5rem;
         font-size: 18px;
+    }
+
+    .card-education-end {
+        margin: 7vw 0 8vw;
     }
 
     .card-container {
@@ -790,8 +805,9 @@ h4 {
        
         .menu {
             font-size: 0.7rem;
-            text-align: center;
+            text-align: center; 
         }
+
         .h1-fm {
             font-size: 10vw;
         }
@@ -822,7 +838,7 @@ h4 {
     }
 }
 
-    @media (max-width: 400px) {
+@media (max-width: 400px) {
         .menu__link {
             font-size: 2.5vw;
         }
